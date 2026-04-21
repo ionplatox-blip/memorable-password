@@ -1,0 +1,17 @@
+{
+  "name": "Entropy Engine",
+  "short_name": "Entropy",
+  "description": "Оффлайн генератор запоминаемых паролей (Diceware)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f1014",
+  "theme_color": "#E5FF45",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
