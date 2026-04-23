@@ -1,4 +1,4 @@
-const CACHE_NAME = 'entropy-engine-v6';
+const CACHE_NAME = 'entropy-engine-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
