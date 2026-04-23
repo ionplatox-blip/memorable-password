@@ -289,6 +289,48 @@
       color: var(--text-muted);
       text-transform: lowercase;
     }
+
+    .explanation {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .explanation h2 {
+      color: var(--text);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .explanation p {
+      margin-bottom: 1rem;
+    }
+    
+    .explanation strong {
+      color: var(--text);
+    }
+
+    .xkcd-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .xkcd-link:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -333,6 +375,15 @@
         <div class="metric-value" id="time-display">—</div>
         <div class="metric-label">Лет на взлом</div>
       </div>
+    </div>
+
+    <div class="explanation">
+      <h2>Как это работает?</h2>
+      <p>Этот генератор использует метод <strong>Diceware</strong>. Ваш компьютер случайным образом выбирает слова из специального словаря. Полученная фраза (например, <em>correct-horse-battery-staple</em>) обладает огромной криптографической стойкостью (энтропией), но при этом легко запоминается человеком в виде визуального образа (эмодзи).</p>
+      <p>Вся генерация происходит <strong>строго в вашем браузере</strong> с использованием надежного системного генератора случайных чисел (<code>window.crypto</code>). Ваши пароли никуда не отправляются на сервер, а само приложение может работать даже без интернета.</p>
+      <a href="https://xkcd.com/936/" target="_blank" rel="noopener noreferrer" class="xkcd-link">
+        🔗 По мотивам знаменитого комикса XKCD #936
+      </a>
     </div>
   </main>
 
